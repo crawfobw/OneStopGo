@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>one.stop.go</title>
+	
+	<!-- Bootstrap Core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery/jQuery Mobile/jQuery Mobile CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> 
+	
+	<!-- Google APIs -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXfPben6GxSeCpmnXbZKg_HZz9w0vhSsQ&libraries=places,geometry">
+	</script>
+
+	<!-- Other Javascript Libraries -->
+	<script type="text/javascript" src="http://underscorejs.org/underscore.js"></script>
+	
+	<!-- Local Files -->
+	<link href="css/OneStopShop.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</head>
+
+<body>
+	<!-- Intro Page -->
+    <div data-role="page" id="intropage" class="intro"> 
+        <div data-role="content" class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 id="h2"class="brand-heading">One.Stop.Go</h2>
+                        <p id="introSubText" class="intro-text">The Employee Store</p>
+						<a href="" class="btn btn-info" id="startBtn" >Find Local Discounts</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	
+	
+	
+	
+	<!-- Test Page -->
+	<div data-role="page" id="test" class="test">
+		<h1> oh hai </h1>
+	</div>
+	
+	<!-- Maps Page -->
+	<div data-role="page" id="maps" class="maps">
+		
+		<div data-role="panel" id="introPanel1" data-theme="a">
+            <ul data-role="listview" class="panelList">
+                 <li style="white-space: normal !important; list-style-image: url('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png');"><a class="category" href="" id="lodging">Hotels</a></li>
+                 <li style="white-space: normal !important"><a class="category" href="" id="department-stores">Department Stores</a></li>
+                 <li style="white-space: normal !important"><a class="category" href="" id="office-supplies">Office Supplies</a></li>
+            </ul>
+        </div>
+		
+		<div data-role="header" id="mapsHead" >
+            <a href="#introPanel1" data-iconpos="notext" data-icon="search">Search</a>
+            <h1 id="h1"> One.Stop.Go </h1>
+        </div>
+		
+		<div data-role="content" id="mapsContent">
+			<div id="map-canvas" class="map-canvas"></div>
+		</div>
+	</div>
+
+	<div id="loading" class="loading"></div>
+</body>
+
+</html>
